@@ -5,11 +5,11 @@
     box-sizing: border-box;
 }
 
-/* Estilo geral */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #eaf6ff; /* Azul claro suave */
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f8ff; /* Azul claro tranquilo */
     color: #333;
+    line-height: 1.6;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -17,77 +17,105 @@ body {
     padding: 20px;
 }
 
-/* Container principal */
+/* Container geral */
 .container {
-    width: 100%;
-    max-width: 900px;
-    background: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
     display: flex;
-    flex-direction: column;
-    gap: 20px;
+    max-width: 1100px;
+    width: 100%;
+    background: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
 }
 
-/* Cabeçalho */
-.header {
+/* Lado esquerdo */
+.left_side {
+    background: #2e8b57; /* Verde suave */
+    color: #fff;
+    flex: 1;
+    padding: 30px 20px;
     text-align: center;
 }
 
-.header h1 {
-    font-size: 24px;
-    color: #444;
+.left_side .profile_text {
+    margin-bottom: 30px;
 }
 
-/* Seção de informações */
-.section {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.left_side .profile_text .img_bx {
+    width: 150px;
+    height: 150px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 4px solid #fff;
 }
 
-.section h2 {
+.left_side .profile_text img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.left_side .profile_text h2 {
+    font-size: 22px;
+    margin-top: 15px;
+    color: #fff;
+}
+
+.left_side .profile_text h2 span {
+    font-size: 14px;
+    font-weight: 300;
+    color: #c8e6c9;
+}
+
+.left_side .contact_info {
+    text-align: left;
+    margin-top: 20px;
+}
+
+.left_side .contact_info h3.title {
     font-size: 18px;
-    color: #555;
-    border-bottom: 2px solid #ddd;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #c8e6c9;
     padding-bottom: 5px;
 }
 
-/* Lista de informações */
-.info-list {
+.left_side .contact_info ul {
     list-style: none;
-    padding: 0;
 }
 
-.info-list li {
+.left_side .contact_info ul li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.left_side .contact_info ul li .icon {
+    width: 30px;
+    font-size: 16px;
+    color: #c8e6c9;
+}
+
+.left_side .contact_info ul li .text {
     font-size: 14px;
-    color: #666;
-    margin: 5px 0;
 }
 
-/* Rodapé */
-.footer {
-    text-align: center;
-    font-size: 12px;
-    color: #aaa;
+/* Lado direito */
+.right_side {
+    flex: 2;
+    padding: 30px 20px;
 }
 
-/* Estilo responsivo */
-@media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    .header h1 {
-        font-size: 20px;
-    }
-
-    .section h2 {
-        font-size: 16px;
-    }
-
-    .info-list li {
-        font-size: 12px;
-    }
+.right_side .title2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #2e8b57;
 }
+
+.right_side .about,
+.right_side .skills {
+    margin-bottom: 30px;
+}
+
+.right_side .about p {
+   
