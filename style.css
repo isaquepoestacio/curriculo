@@ -109,14 +109,23 @@ body {
 }
 
 /* Habilidades */
-.skills .skill {
+.skills .box {
     margin-bottom: 15px;
 }
 
-.skills .skill h4 {
+.skills .box h4 {
     font-size: 14px;
     margin-bottom: 5px;
 }
 
-.skills .skill .percent-bar {
-    width:
+.skills .percent div {
+    height: 8px;
+    background: #1565c0;
+}
+
+/* Ajuste de responsividade */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+}
